@@ -1,0 +1,66 @@
+﻿@model FacturacionElectronica.Web.Models.Components.Datatable
+
+<link rel="stylesheet" href="~/css/Components/Datatable.min.css" />
+
+<div class="datatable-container" id="@Model.idDivContainer">
+    <div class="header-tools  @(!Model.showSearch ? "d-none":"")">
+        <div class="row d-flex justify-content-between">
+
+            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex align-items-center mb-2  ">
+                <div class="list-items">
+                    <select name="n-entries" id="n-entries" class="n-entries form-control form-control-sm">
+                        @foreach (var numeroEntrada in Model.numeroEntradas)
+                        {
+                            <option value="@numeroEntrada">@numeroEntrada</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-8 col-lg-3 col-md-3 col-sm-4 mb-2">
+                <div class="tools">
+                    <ul>
+                        @if (Model.buttons != null && Model.buttons.Count > 0)
+                        {
+                            if ((Model.buttons).Contains("pdf"))
+                            {
+                                <li><button class="btn btn-primary">Pdf</button></li>
+                            }
+                            if ((Model.buttons).Contains("excel"))
+                            {
+                                <li><button class="btn btn-primary">Excel</button></li>
+                            }
+                            if ((Model.buttons).Contains("word"))
+                            {
+                                <li><button class="btn btn-primary">Word</button></li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-4 d-flex align-items-center mb-2">
+                <div class="search">
+                    <input type="text" name="" autocomplete="new-password" class="form-control form-control-sm txtSearch" value="" placeholder="Digite mínimo 3 caracteres para buscar..." />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="datatable" id="@Model.idTable"></table>
+    </div>
+
+    <div class="footer-tools @(!Model.showPagination ? "d-none":"")">
+        <div class="row">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-6 d-flex align-items-center mb-2">
+                <div class="info-pagination">
+                    <span></span>
+                </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg-6 d-flex align-items-center mb-2">
+                <div class="pages">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

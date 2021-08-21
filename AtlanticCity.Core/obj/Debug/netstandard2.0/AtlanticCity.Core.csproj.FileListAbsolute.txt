@@ -1,0 +1,9 @@
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\bin\Debug\netstandard2.0\AtlanticCity.Core.deps.json
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\bin\Debug\netstandard2.0\AtlanticCity.Core.dll
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\bin\Debug\netstandard2.0\AtlanticCity.Core.pdb
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\obj\Debug\netstandard2.0\AtlanticCity.Core.AssemblyInfoInputs.cache
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\obj\Debug\netstandard2.0\AtlanticCity.Core.AssemblyInfo.cs
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\obj\Debug\netstandard2.0\AtlanticCity.Core.csproj.CoreCompileInputs.cache
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\obj\Debug\netstandard2.0\AtlanticCity.Core.dll
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\obj\Debug\netstandard2.0\AtlanticCity.Core.pdb
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Core\obj\Debug\netstandard2.0\AtlanticCity.Core.csprojAssemblyReference.cache

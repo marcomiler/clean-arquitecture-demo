@@ -1,0 +1,185 @@
+﻿
+$primary-color: white;
+$secondary-color: rgb(61,68,73);
+$highlight-color: #3282b8;
+$silver: #f1f1f1e0;
+
+
+$dt-padding: 12px;
+$dt-padding-s: 6px;
+$dt-padding-xs: 2px;
+
+$dt-border-radius: 3px;
+
+$dt-border-color: $secondary-color;
+$dt-bg-color: $highlight-color;
+$dt-text-color: $primary-color;
+$dt-bg-active-button : $highlight-color;
+$dt-text-color-button: $primary-color;
+$dt-text-color-active-button: $highlight-color;
+$dt-hover-cell-color: $silver;
+$dt-even-row-color: $secondary-color;
+$dt-focus-color: $highlight-color;
+$dt-input-background-color: $secondary-color;
+$dt-input-color: $primary-color;
+
+
+.datatable-container {
+    border-radius: $dt-border-radius;
+    width: 100%;
+    margin: 0 auto;
+    /*font-size: 15px;*/
+    .header-tools {
+        padding: $dt-padding;
+        align-items: baseline;
+        justify-content: space-between;
+
+        .search {
+            width: 100%;
+            /* &-input {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                border-radius: $dt-border-radius;
+                border: solid 1px $dt-border-color;
+            }*/
+        }
+
+        .tools {
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: start;
+                align-items: baseline;
+
+                li {
+                    display: inline-block;
+                    margin: 0 $dt-padding-xs;
+                    align-items: baseline;
+                }
+            }
+        }
+
+        .list-items {
+        }
+    }
+
+    .footer-tools {
+        padding: $dt-padding;
+        align-items: baseline;
+
+        .pages {
+            margin-left: auto;
+            margin-right: 0;
+
+
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: baseline;
+                justify-content: flex-end;
+
+                li {
+                    display: inline-block;
+                    margin: 0 $dt-padding-xs;
+
+                    button {
+
+                        &.active {
+                            background-color: $dt-bg-color;
+                            border-radius: $dt-border-radius;
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .info-pagination {
+        }
+    }
+
+    .footer-tools .pages ul li button,
+    .header-tools .tools ul li button {
+        width: 100%;
+        box-sizing: border-box;
+        border: 0;
+        border-radius: $dt-border-radius;
+        cursor: pointer;
+    }
+
+    .footer-tools .pages ul li button:hover,
+    .header-tools .tools ul li button:hover {
+        background: $dt-text-color-active-button;
+        cursor: $dt-text-color-active-button;
+        color: $primary-color;
+    }
+
+    .footer-tools .pages ul li button,
+    .footer-tools .pages ul li span,
+    .header-tools .tools ul li button {
+        padding: $dt-padding-s $dt-padding;
+    }
+
+    .datatable {
+        border-collapse: collapse;
+        width: 100%;
+
+
+        thead {
+            background: #362e4e;
+            color: white;
+            box-shadow: 0px 1px 3px 0px #cccccc;
+            // border: 1px solid #2a3338;
+            th:first-child {
+                border-radius: .5rem 0 0 .2rem;
+            }
+
+            th:last-child {
+                border-radius: 0 .5rem .2rem 0;
+            }
+        }
+
+        th {
+            padding: $dt-padding $dt-padding;
+        }
+
+        td {
+            padding: 5px 11px;
+        }
+
+        th {
+            font-weight: bolder;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ececec;
+        }
+
+        tbody {
+
+            tr {
+                &:hover {
+                    background-color: $dt-hover-cell-color;
+                }
+
+                td{
+                    .form-control-table-sm{
+                        height: 40px !important;
+                    }
+                }
+            }
+
+            &:before {
+                content: "@";
+                display: block;
+                line-height: 10px;
+                text-indent: -99999px;
+            }
+        }
+    }
+}
+

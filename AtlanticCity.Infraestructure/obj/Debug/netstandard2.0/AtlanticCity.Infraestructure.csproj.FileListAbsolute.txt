@@ -1,0 +1,12 @@
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\bin\Debug\netstandard2.0\AtlanticCity.Infraestructure.deps.json
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\bin\Debug\netstandard2.0\AtlanticCity.Infraestructure.dll
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\bin\Debug\netstandard2.0\AtlanticCity.Infraestructure.pdb
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\bin\Debug\netstandard2.0\AtlanticCity.Core.dll
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\bin\Debug\netstandard2.0\AtlanticCity.Core.pdb
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\obj\Debug\netstandard2.0\AtlanticCity.Infraestructure.csprojAssemblyReference.cache
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\obj\Debug\netstandard2.0\AtlanticCity.Infraestructure.AssemblyInfoInputs.cache
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\obj\Debug\netstandard2.0\AtlanticCity.Infraestructure.AssemblyInfo.cs
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\obj\Debug\netstandard2.0\AtlanticCity.Infraestructure.csproj.CoreCompileInputs.cache
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\obj\Debug\netstandard2.0\AtlanticCity.Infraestructure.csproj.CopyComplete
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\obj\Debug\netstandard2.0\AtlanticCity.Infraestructure.dll
+D:\Royss\EmpresaAC\Propuestas\SolutionAtlanticCityWS\AtlanticCity.Infraestructure\obj\Debug\netstandard2.0\AtlanticCity.Infraestructure.pdb

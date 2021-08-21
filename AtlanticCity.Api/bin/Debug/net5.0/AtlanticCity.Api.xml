@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AtlanticCity.Api</name>
+    </assembly>
+    <members>
+        <member name="M:AtlanticCity.Api.Areas.PruebaCA.Controllers.CategoryController.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:AtlanticCity.Api.Areas.PruebaCA.Controllers.ProductController.GetAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AtlanticCity.Api.Areas.PruebaCA.Controllers.ProductController.InsertProduct(AtlanticCity.Core.DTOs.PruebaCA.ProductInsertDTO)">
+            <summary>
+            
+            </summary>
+            <param name="productInsertDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AtlanticCity.Api.Core.GlobalExceptionFilter.#ctor(Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Mvc.Controller})">
+            <summary>
+            ExceptionFilter
+            </summary>
+        </member>
+        <member name="M:AtlanticCity.Api.Core.GlobalExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,63 @@
+
+ALTER proc [dbo].[GetOrderPagination]
+@nroPage int,
+@numberOfEntries int,
+@textSearch varchar(250)
+AS
+BEGIN
+ 
+declare @totalRows int
+ 
+set @numberOfEntries =  case when @numberOfEntries <= 0 then 0 else @numberOfEntries end
+
+set @totalRows =(select count(*)
+					from Orders o
+					inner join Customers c
+						on o.CustomerID = c.CustomerID
+					where
+					o.IsConfirmed = 0
+					and 
+					(
+					c.CompanyName  like '%' + @textSearch + '%'
+					or c.Phone like '%' + @textSearch + '%'
+					or o.OrderID like '%' + @textSearch + '%'
+					or cast(o.OrderDate as varchar) like '%' + @textSearch + '%'
+					)
+				)
+ 
+select @totalRows
+ 
+select * from (
+	select 
+	ROW_NUMBER() OVER (ORDER BY orderID desc) orden,
+	o.OrderID,
+	o.OrderDate,
+	c.CustomerID,
+	c.CompanyName,
+	c.Phone
+	from Orders o
+	inner join Customers c
+		on o.CustomerID = c.CustomerID
+	where
+	o.IsConfirmed = 0
+	and 
+	(
+	c.CompanyName  like '%' + @textSearch + '%'
+	or c.Phone like '%' + @textSearch + '%'
+	or o.OrderID like '%' + @textSearch + '%'
+	or cast(o.OrderDate as varchar) like '%' + @textSearch + '%'
+	)
+)
+query
+where
+query.orden between (@numberOfEntries* (@nroPage -1 ))  
+and (case when @numberOfEntries = 0 then @totalRows else (@nroPage * @numberOfEntries) end)
+--order by 
+--o.OrderDate desc
+--OFFSET (@numberOfEntries* (@nroPage -1 ))
+--ROWS FETCH
+--NEXT (case when @numberOfEntries = 0 then @totalRows else @numberOfEntries end)
+--ROWS ONLY
+END
+
+
